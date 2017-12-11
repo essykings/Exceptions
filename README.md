@@ -39,10 +39,10 @@ As you can see from the above program, the code inside the ``try`` statement is 
 
 In the event that an exception is raised, the program executes the ``except`` statement that matches it's ``try`` statement followed the rest of the code outside of the ``try except`` block if any.
 
-##Types of Exceptions in Python
+## Types of Exceptions in Python
 Python has several built-in exceptions. Let’s take a glance at some of them so that you can get a perspective of what they are and how to use them.
 
-###Key Error
+### Key Error
 This is an error that occurs when a dictionary is passed and one of the keys is not present in the dictionary.
 The following is a Django view used to authenticate users and it expects a dictionary of username and password. If any of the keys is not passed in the input, the program raises a key error exception.
 
@@ -101,7 +101,7 @@ Let's look at the example below
 
 The output of this code will result in an invalid syntax at line 3 because the string ``it's even``  is not enclosed in quotes
 
-####Output
+#### Output
  
  
     Traceback (most recent call last):
@@ -111,7 +111,7 @@ The output of this code will result in an invalid syntax at line 3 because the s
     SyntaxError: invalid syntax
 
 
-###TypeError
+### TypeError
 This exception is raised when an operation or function is attempted that is invalid for the specified data type.
 In the example below, the function ``sum_of_numbers`` takes in 2 arguments and adds them together
 When you attempt to call the function with 3 arguments, it raises a TypeError exception because it expects only 2arguments.
@@ -125,11 +125,11 @@ When you attempt to call the function with 3 arguments, it raises a TypeError ex
 
     TypeError: total() takes 2 positional arguments but 3 were given
 
-##The try/catch, else and finally clauses.
+## The try/catch, else and finally clauses.
 There are several other components of exceptions and that is the else and finally clauses.
 We have already been able to use try and catch statements which are used to catch errors. Let's now look at the else and finally statements.
 
-###The Else Clause
+### The Else Clause
 The else clause is used to execute code when the program does not raise an exception.
 Consider the example we used in the beginning of this tutorial, we are going to execute the print statement inside the else statement.
 
@@ -143,11 +143,11 @@ Consider the example we used in the beginning of this tutorial, we are going to 
         else:
             print('%s squared  is  %s' % (x, x**2))
 
-##The try/catch, else and finally clauses.
+## The try/catch, else and finally clauses.
 The try … except statement has other optional clauses, the else and finally clauses.
 We have already been able to use try and catch statements which are used to catch errors. Let's now look at the else and finally clauses.
 
-###The Else Clause
+### The Else Clause
 The else clause is used to execute code when the program does not raise an exception. It is also better to use the else clause than adding additional code to the try clause, this is because it avoids unintentionally catching an exception that wasn’t raised by the code being protected by the try... except statement.
 Consider the example we used in the beginning of this tutorial, we are going to execute the print statement inside the else statement as shown below.
 
@@ -162,7 +162,7 @@ Consider the example we used in the beginning of this tutorial, we are going to 
         else:
             print('%s squared  is  %s' % (x, x**2))
 
-###The Finally clause
+### The Finally clause
 
 This clause is meant to define clean-up actions that must be performed under all circumstances.
 A finally clause if used must always be executed before leaving the statement try, whether an exception has occurred or not.
