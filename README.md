@@ -1,5 +1,5 @@
 # Handling exceptions in Python
-This tutorial will provide an introduction to python exceptions, types of exceptions and how to raise and handle errors in python.
+This tutorial will provide an introduction to python exceptions, types of exceptions and how to raise and handle exceptions in python.
 
 ## What is a python exception?
 A python exception is an error that occurs when executing a program, causing the program to stop. 
